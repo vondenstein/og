@@ -8,8 +8,23 @@ export const config = {
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  return new ImageResponse(<OGImage>Hello world!</OGImage>, {
-    width: 1200,
-    height: 628,
-  })
+  try {
+    const { searchParams } = new URL(req.url)
+
+    // ?title=<title>
+    const hasTitle = searchParams.has("title")
+    const title = hasTitle
+      ? searchParams.get("title")?.slice(0, 100)
+      : "Stephen Vondenstein"
+
+    return new ImageResponse(<OGImage>{title}</OGImage>, {
+      width: 1200,
+      height: 628,
+    })
+  } catch (e: any) {
+    console.log(`${e.message}`)
+    return new Response(`Failed to generate the image`, {
+      status: 500,
+    })
+  }
 }
