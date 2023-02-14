@@ -1,0 +1,10 @@
+# node
+package-lock.json
+node_modules/**
+
+# built sites
+public
+*.min.js
+
+# next
+.next/**

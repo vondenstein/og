@@ -1,0 +1,43 @@
+{
+  "name": "og",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open graph image generation on the edge",
+  "license": "MIT",
+  "homepage": "https://og.vondenstein.com",
+  "author": {
+    "name": "Stephen Vondenstein",
+    "email": "stephen@vondenstein.com",
+    "url": "https://vondenstein.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vondenstein/og"
+  },
+  "bugs": {
+    "email": "support@vondenstein.com",
+    "url": "https://github.com/vondenstein/og/issues"
+  },
+  "keywords": [
+    "og", "open-graph", "vercel"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.10",
+    "@vercel/og": "^0.1.0",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
+  }
+}
