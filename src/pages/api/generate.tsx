@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next"
+import type { NextApiRequest } from "next"
 import { ImageResponse } from "@vercel/og"
 
 import OGImage from "@/components/OGImage"
@@ -7,9 +7,9 @@ export const config = {
   runtime: "edge",
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(req: NextApiRequest) {
   try {
-    const { searchParams } = new URL(req.url)
+    const { searchParams } = new URL(req.url!)
 
     // ?title=<title>
     const hasTitle = searchParams.has("title")
