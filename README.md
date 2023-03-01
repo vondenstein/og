@@ -38,22 +38,21 @@ Below are examples of each layout type, including the URL query string required 
 Query string: `title=Hello%20World!`
 
 Result:
-![Image generated with Page layout](https://og.vondenstein.com/api/generate?title=Hello%20World!)
+![Image generated with Page layout](./docs/page-layout.png)
 
 #### Profile
 
 Query string: `type=profile&title=Hello%20World!&subtitle=Check%20out%20this%20awesome%20Open%20Graph%20&image=https://avatars.githubusercontent.com/u/17032946`
 
 Result:
-![Image generated with Profile layout](https://og.vondenstein.com/api/generate?type=profile&title=Hello%20World!&subtitle=Check%20out%20this%20awesome%20Open%20Graph%20&image=https://avatars.githubusercontent.com/u/17032946)
+![Image generated with Profile layout](./docs/profile-layout.png)
 
 #### Post
 
-Query string: `type=post&title=Hello%20World!&image=http://localhost:8000/static/2f54bcb5636a79dddc8613cb17979cf2/97edb/hero.jpg`
-
+Query string: `type=post&title=Hello%20World!&image=https://vondenstein.com/static/7c7ad6655d44dda060cbd284cd720423/ce7b8/hero.jpg
 Result:
 
-![Image generated with Post layout](https://og.vondenstein.com/api/generate?type=post&title=Hello%20World!&image=http://localhost:8000/static/2f54bcb5636a79dddc8613cb17979cf2/97edb/hero.jpg)
+![Image generated with Post layout](./docs/post-layout.png)
 
 ## Deploy on Vercel
 
