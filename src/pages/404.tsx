@@ -20,6 +20,8 @@ const NotFoundPage = () => {
           name="description"
           content="Sorry, there is nothing at this URL."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#111111" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
